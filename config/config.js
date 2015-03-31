@@ -9,7 +9,8 @@ module.exports = {
 			saml : {
 				path : '/login/callback',
 				entryPoint : 'https://openidp.feide.no/simplesaml/saml2/idp/SSOService.php',
-				issuer : 'passport-saml'
+				issuer : 'passport-saml-test-test',
+        logoutUrl: 'https://openidp.feide.no/simplesaml/saml2/idp/SingleLogoutService.php'
 			}
 		}
 	}

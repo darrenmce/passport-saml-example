@@ -1,12 +1,14 @@
 extends layout
 
 block content
-	h1 Profile
+    h1 Profile
 
-	dl
-		dt Display name
-		dd #{user.displayName}
-		dt Email
-		dd #{user.email}
+    dl
+        dt Display name
+        dd #{user.displayName}
+        dt Email
+        dd #{user.email}
+        dt profile
+        dd #{user.profile}
 
-	a(href="/logout") Logout
+    a(href="/logout") Logout
