@@ -3,12 +3,17 @@ extends layout
 block content
     h1 Profile
 
-    dl
-        dt Display name
-        dd #{user.displayName}
-        dt Email
-        dd #{user.email}
-        dt profile
-        dd #{user.profile}
+    ul.list-group
+        li.list-group-item
+            strong Display name:
+            span #{user.displayName}
+    ul.list-group
+        li.list-group-item
+            strong Email:
+            span #{user.email}
+    ul.list-group
+        li.list-group-item
+            strong profile:
+            pre #{user.profile}
 
-    a(href="/logout") Logout
+    a.btn.btn-default(href="/logout") Logout

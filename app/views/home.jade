@@ -1,12 +1,9 @@
 extends layout
 
 block content
-	if user !== null
-		h1 Hello, #{user.firstName}
-		a(href="/profile") Profile
-		br
-		a(href="/logout") Logout
-	else
-		h1 Welcome
-		br
-		a(href="/login") Login
+	div.hero-unit
+		if user !== null
+			h1 Hello, #{user.firstName}
+			div.btn-group
+				a.btn.btn-default(href="/profile") Profile
+				a.btn.btn-default(href="/logout") Logout

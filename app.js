@@ -30,11 +30,11 @@ app.configure(function () {
 });
 
 app.configure('development', function () {
-  console.log ("Development mode.");
+  console.log("Development mode.");
   app.use(express.errorHandler());
 });
 app.configure ('production', function () {
-  console.log ("Production mode.");
+  console.log("Production mode.");
 });
 
 app.use(function(err, req, res, next) {
